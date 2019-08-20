@@ -1,6 +1,6 @@
 Sensingsugar
 ==============
 * Login/Register/logout
-* status history management of patient
-* Anlysis the values of PH
+* Management status history of patient
+* Analyze the values of PH
 * Image recognition
