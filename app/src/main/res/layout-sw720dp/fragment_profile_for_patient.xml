@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/pink_gradient_light_bk"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/blue_gradient_bk"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/navRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/profileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/navi_title_font_size" />
+
+        <ImageView
+            android:id="@+id/profileBackImage"
+            android:layout_width="@dimen/login_mobile_num_edittext_height"
+            android:layout_height="@dimen/login_mobile_num_edittext_height"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/back_img" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/edit"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/register_link_textview_font_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_greeting_layout_margin_top"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navRelativeLayout">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_greeting_textview_margin_start"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/patientNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                android:layout_weight="1"
+                android:background="@drawable/radius_controller_textview_white"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:gravity="center_vertical"
+                android:inputType="textCapSentences"
+                android:text="Subramaniam"
+                android:textColor="@color/colorDarkBrown"
+                android:textSize="@dimen/home_greeting_font_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/patientSurName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                android:layout_weight="1"
+                android:background="@drawable/radius_controller_textview_white"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:gravity="center_vertical"
+                android:inputType="textCapSentences"
+                android:text="Chatterjee"
+                android:textColor="@color/colorDarkBrown"
+                android:textSize="@dimen/home_greeting_font_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contactTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/pv_default_margin_3"
+                    android:paddingTop="@dimen/pv_default_margin_3"
+                    android:text="@string/contact"
+                    android:textColor="@color/colorDarkBrown"
+                    android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/mobileNumTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="@string/mobileNumber"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6">
+
+                        <TextView
+                            android:id="@+id/mobileNumValueTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="+91 125124125124"
+                            android:textColor="@color/colorDarkBrown"
+                            android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                        <LinearLayout
+                            android:id="@+id/mobileNumberEditLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/editProfileCCP"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="-10dp"
+                                android:layout_marginTop="-10dp"
+                                android:layout_weight="0.4"
+                                android:gravity="right"
+                                app:ccpDialog_allowSearch="true"
+                                app:ccpDialog_showCloseIcon="true"
+                                app:ccpDialog_textColor="@color/colorDarkBrown"
+                                app:ccp_contentColor="@color/colorDarkBrown"
+                                app:ccp_countryAutoDetectionPref="SIM_NETWORK_LOCALE"
+                                app:ccp_rememberLastSelection="true"
+                                app:ccp_showFlag="false"
+                                app:ccp_showNameCode="false"
+                                app:ccp_textGravity="RIGHT"
+                                app:ccp_textSize="@dimen/pv_info_value_fontsize" />
+
+                            <EditText
+                                android:id="@+id/editPhoneNumberEditView"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:background="@drawable/radius_controller_textview_white"
+                                android:ellipsize="middle"
+                                android:ems="10"
+                                android:fadeScrollbars="false"
+                                android:gravity="fill_vertical|end"
+                                android:inputType="phone"
+                                android:textColor="@color/colorDarkBrown"
+                                android:textColorLink="@color/colorDarkBrown"
+                                android:textSize="@dimen/home_value_title_textview_font_size" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/pv_default_margin_3"
+                    android:layout_marginStart="@dimen/pv_default_margin_3"
+                    android:background="@color/colorBorderLine" />
+
+                <TextView
+                    android:id="@+id/bioDataTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/pv_default_margin_3"
+                    android:paddingTop="@dimen/pv_default_margin_3"
+                    android:text="@string/bioData"
+                    android:textColor="@color/colorDarkBrown"
+                    android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/birthdayTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/birthday"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/birthdayValTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="12 Aug 1978 (39 yrs)"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/pv_default_margin_3"
+                    android:layout_marginStart="@dimen/pv_default_margin_3"
+                    android:background="@color/colorBorderLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/heightTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="@string/height"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <EditText
+                        android:id="@+id/heightValTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/radius_controller_textview_white"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:text="175"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/heightMesureLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="right"
+                        android:text="Cm"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/pv_default_margin_3"
+                    android:layout_marginStart="@dimen/pv_default_margin_3"
+                    android:background="@color/colorBorderLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/weightTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="@string/weight"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <EditText
+                        android:id="@+id/weightValTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/radius_controller_textview_white"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:text="75"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/weightMesureLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="right"
+                        android:text="kgs"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/pv_default_margin_3"
+                    android:layout_marginStart="@dimen/pv_default_margin_3"
+                    android:background="@color/colorBorderLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/bmiTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/bmi"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/bmiValTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="25.4 (normal)"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/pv_default_margin_3"
+                    android:layout_marginStart="@dimen/pv_default_margin_3"
+                    android:background="@color/colorBorderLine" />
+
+                <TextView
+                    android:id="@+id/aadhaartxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/pv_default_margin_3"
+                    android:paddingTop="@dimen/pv_default_margin_3"
+                    android:text="@string/aadhaar"
+                    android:textColor="@color/colorDarkBrown"
+                    android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/aadhaarNumTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/aadhaar_num"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <EditText
+                        android:id="@+id/aadhaarNumValTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_controller_textview_white"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:gravity="end"
+                        android:inputType="textCapSentences"
+                        android:maxLength="12"
+                        android:text="1241 4123 1251"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textColorLink="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/pv_default_margin_3"
+                    android:layout_marginStart="@dimen/pv_default_margin_3"
+                    android:background="@color/colorBorderLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/districtTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/districtAadhaar"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <EditText
+                        android:id="@+id/districtValTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_controller_textview_white"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:gravity="end"
+                        android:inputType="textCapSentences"
+                        android:text="Ram Nagar"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/pv_default_margin_3"
+                    android:layout_marginStart="@dimen/pv_default_margin_3"
+                    android:background="@color/colorBorderLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/stateTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/stateAadhaar"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <EditText
+                        android:id="@+id/stateValTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_controller_textview_white"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:gravity="end"
+                        android:inputType="textCapSentences"
+                        android:text="Madhya Pradesh"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/pv_default_margin_3"
+                    android:layout_marginStart="@dimen/pv_default_margin_3"
+                    android:background="@color/colorBorderLine" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

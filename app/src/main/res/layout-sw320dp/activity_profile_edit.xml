@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.sensingself.sensingsugar.Activites.LoginRegisterProfile.LoginActivity"
+    android:background="@drawable/blue_gradient_bk"
+    android:theme="@style/PushViewTheme"
+    android:id="@+id/profileEditView">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <TextView
+            android:id="@+id/profileTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_title_textview_margin_top"
+            android:fontFamily="serif"
+            android:text="@string/thank_you_for_assisting_others"
+            android:textAlignment="center"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/profile_title_textview_font_size"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/city_editText_margin_end"
+            android:layout_marginStart="@dimen/city_editText_margin_start"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/doneBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileTitle">
+
+            <EditText
+                android:id="@+id/firstNameText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/firstname_editText_height"
+                android:layout_marginBottom="@dimen/margin_top_bottom_default_1"
+                android:layout_marginTop="@dimen/margin_top_bottom_default_1"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:hint="@string/first_name"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/firstname_editText_padding_end"
+                android:paddingStart="@dimen/firstname_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileTitle" />
+
+            <EditText
+                android:id="@+id/lastNameText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lastname_editText_height"
+                android:layout_marginBottom="@dimen/margin_top_bottom_default_1"
+                android:layout_marginTop="@dimen/margin_top_bottom_default_1"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:hint="@string/last_name"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/lastname_editText_padding_end"
+                android:paddingStart="@dimen/lastname_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstNameText" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/aadhaarText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/aadhaar_editText_height"
+                    android:layout_marginBottom="@dimen/margin_top_bottom_default_1"
+                    android:layout_marginTop="@dimen/margin_top_bottom_default_1"
+                    android:background="@drawable/radius_controller_textview"
+                    android:ellipsize="middle"
+                    android:ems="10"
+                    android:fadeScrollbars="false"
+                    android:hint="@string/aadhaar"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:paddingEnd="@dimen/aadhaar_editText_padding_end"
+                    android:paddingStart="@dimen/aadhaar_editText_padding_start"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="@dimen/editView_default_font_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/cameraImage"
+                    android:layout_width="@dimen/profile_camera_imageview_width"
+                    android:layout_height="@dimen/profile_camera_imageview_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/camera" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/institutionTypeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/institutiontype_textview_height"
+                    android:layout_marginBottom="@dimen/margin_top_bottom_default_1"
+                    android:layout_marginTop="@dimen/margin_top_bottom_default_5"
+                    android:background="@drawable/radius_controller_textview"
+                    android:ellipsize="middle"
+                    android:ems="10"
+                    android:fadeScrollbars="false"
+                    android:paddingEnd="@dimen/institutiontype_textview_padding_end"
+                    android:paddingStart="@dimen/institutiontype_textview_padding_start"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="@dimen/editView_default_font_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinnerInstitutionType"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/institutiontype_textview_height"
+                    android:layout_marginBottom="@dimen/margin_top_bottom_default_1"
+                    android:layout_marginTop="@dimen/margin_top_bottom_default_5"
+                    android:ellipsize="middle"
+                    android:ems="10"
+                    android:overlapAnchor="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/cityText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/city_editText_height"
+                android:layout_marginBottom="@dimen/margin_top_bottom_default_1"
+                android:layout_marginTop="@dimen/margin_top_bottom_default_1"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:hint="@string/city"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/city_editText_padding_end"
+                android:paddingStart="@dimen/city_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size"
+                app:layout_constraintBottom_toTopOf="@+id/doneBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/nameInstitutionText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/institutionname_editText_height"
+                android:layout_marginBottom="@dimen/margin_top_bottom_default_1"
+                android:layout_marginTop="@dimen/margin_top_bottom_default_1"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:hint="@string/name_of_institution"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/institutionname_editText_padding_end"
+                android:paddingStart="@dimen/institutionname_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size"
+                app:layout_constraintBottom_toTopOf="@+id/stateText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/stateText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/state_editText_height"
+                android:layout_marginBottom="@dimen/margin_top_bottom_default_1"
+                android:layout_marginTop="@dimen/margin_top_bottom_default_1"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:hint="@string/state"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/state_editText_padding_end"
+                android:paddingStart="@dimen/state_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size"
+                app:layout_constraintBottom_toTopOf="@+id/cityText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="@dimen/profile_done_button_weidth"
+            android:layout_height="@dimen/profile_done_button_height"
+            android:layout_marginBottom="@dimen/profile_done_button_margin_bottom"
+            android:background="@drawable/radius_controller_btn"
+            android:text="@string/done_btn"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/profile_done_button_font_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/profileEditNote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/profileEditNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/profile_edit_note_margin_bottom"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/we_respect_your_privacy"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightBrownForNote"
+            android:textSize="@dimen/profile_edit_note_font_size"
+            android:typeface="sans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

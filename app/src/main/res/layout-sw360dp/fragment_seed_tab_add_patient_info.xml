@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient_bk"
+    tools:context="me.sensingself.sensingsugar.Activites.Fragments.TestTab.SeedAddPatientInfoFragment"
+    android:id="@+id/seedParentAddPatientInfo">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/patient_add_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/navi_title_font_size" />
+        <ImageView
+            android:id="@+id/patientAddbackImageView"
+            android:layout_width="@dimen/login_mobile_num_edittext_height"
+            android:layout_height="@dimen/login_mobile_num_edittext_height"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+            app:srcCompat="@drawable/back_img" android:contentDescription="@string/todo" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/noteAddPatient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_start"
+            android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+            android:layout_marginTop="@dimen/patient_note_textview_margin_top"
+            android:text="@string/note_add_patient_info"
+            android:textAlignment="center"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/login_mobile_num_title_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/nextPatientAddBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noteAddPatient">
+
+            <EditText
+                android:id="@+id/patientNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_mobile_num_edittext_height"
+                android:layout_marginBottom="@dimen/home_plattitle_textview_margin_top"
+                android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_start"
+                android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:hint="@string/first_name"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/firstname_editText_padding_end"
+                android:paddingStart="@dimen/firstname_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size" />
+
+            <EditText
+                android:id="@+id/patientSurNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_mobile_num_edittext_height"
+                android:layout_marginBottom="@dimen/home_plattitle_textview_margin_top"
+                android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_start"
+                android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:hint="@string/surname"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/firstname_editText_padding_end"
+                android:paddingStart="@dimen/firstname_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/patientHeightTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/login_mobile_num_edittext_height"
+                        android:layout_marginBottom="@dimen/home_plattitle_textview_margin_top"
+                        android:layout_marginEnd="@dimen/login_mobile_num_edittext_padding_end"
+                        android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                        android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_controller_textview"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:hint="@string/height"
+                        android:inputType="number"
+                        android:paddingEnd="@dimen/firstname_editText_padding_end"
+                        android:paddingStart="@dimen/firstname_editText_padding_start"
+                        android:textColor="@color/editTextColor"
+                        android:textSize="@dimen/editView_default_font_size" />
+
+                    <TextView
+                        android:id="@+id/unitHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/patientHeightTxt"
+                        android:layout_alignBottom="@+id/patientHeightTxt"
+                        android:layout_alignEnd="@+id/patientHeightTxt"
+                        android:layout_marginEnd="11dp"
+                        android:hint="cms"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textColorLink="@color/colorDarkBrown"
+                        android:textSize="@dimen/editView_default_font_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/patientWeightTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/login_mobile_num_edittext_height"
+                        android:layout_marginBottom="@dimen/home_plattitle_textview_margin_top"
+                        android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_start"
+                        android:layout_marginStart="@dimen/login_mobile_num_edittext_padding_end"
+                        android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_controller_textview"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:hint="@string/weight"
+                        android:inputType="number"
+                        android:paddingEnd="@dimen/firstname_editText_padding_end"
+                        android:paddingStart="@dimen/firstname_editText_padding_start"
+                        android:textColor="@color/editTextColor"
+                        android:textSize="@dimen/editView_default_font_size" />
+
+                    <TextView
+                        android:id="@+id/unitWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/patientWeightTxt"
+                        android:layout_alignBottom="@+id/patientWeightTxt"
+                        android:layout_alignEnd="@+id/patientWeightTxt"
+                        android:layout_marginEnd="11dp"
+                        android:hint="kgs"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textColorLink="@color/colorDarkBrown"
+                        android:textSize="@dimen/editView_default_font_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/patientGenderTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_mobile_num_edittext_height"
+                    android:layout_marginBottom="@dimen/home_plattitle_textview_margin_top"
+                    android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                    android:layout_marginEnd="@dimen/login_mobile_num_edittext_padding_end"
+                    android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius_controller_textview"
+                    android:ellipsize="middle"
+                    android:ems="10"
+                    android:fadeScrollbars="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/gender"
+                    android:paddingEnd="@dimen/firstname_editText_padding_end"
+                    android:paddingStart="@dimen/firstname_editText_padding_start"
+                    android:textColor="@color/colorDarkBrown"
+                    android:textColorLink="@color/colorDarkBrown"
+                    android:textSize="@dimen/editView_default_font_size" />
+
+                <TextView
+                    android:id="@+id/patientBirthTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_mobile_num_edittext_height"
+                    android:layout_marginBottom="@dimen/home_plattitle_textview_margin_top"
+                    android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                    android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_start"
+                    android:layout_marginStart="@dimen/login_mobile_num_edittext_padding_end"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius_controller_textview"
+                    android:ellipsize="middle"
+                    android:ems="10"
+                    android:fadeScrollbars="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/birthday"
+                    android:paddingEnd="@dimen/firstname_editText_padding_end"
+                    android:paddingStart="@dimen/firstname_editText_padding_start"
+                    android:textColor="@color/colorDarkBrown"
+                    android:textColorLink="@color/colorDarkBrown"
+                    android:textSize="@dimen/editView_default_font_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/patientAadhaarTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_mobile_num_edittext_height"
+                    android:layout_marginBottom="@dimen/home_plattitle_textview_margin_top"
+                    android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_start"
+                    android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                    android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                    android:background="@drawable/radius_controller_textview"
+                    android:ellipsize="middle"
+                    android:ems="10"
+                    android:fadeScrollbars="false"
+                    android:hint="@string/aadhaar_optional"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:paddingEnd="@dimen/firstname_editText_padding_end"
+                    android:paddingStart="@dimen/firstname_editText_padding_start"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="@dimen/editView_default_font_size" />
+
+                <EditText
+                    android:id="@+id/patientMobileTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_mobile_num_edittext_height"
+                    android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_start"
+                    android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                    android:layout_marginBottom="@dimen/home_plattitle_textview_margin_top"
+                    android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                    android:background="@drawable/radius_controller_textview"
+                    android:ellipsize="middle"
+                    android:ems="10"
+                    android:fadeScrollbars="false"
+                    android:hint="@string/mobile_opt"
+                    android:inputType="phone"
+                    android:paddingEnd="@dimen/login_mobile_num_edittext_padding_end"
+                    android:paddingStart="@dimen/login_mobile_num_edittext_padding_start"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="@dimen/editView_default_font_size" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/patientMobileCCP"
+                    android:layout_width="@dimen/pre_phone_num_CCP_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/pre_phone_num_CCP_margin_start"
+                    app:ccpDialog_allowSearch="true"
+                    app:ccpDialog_showCloseIcon="true"
+                    app:ccpDialog_textColor="@color/editTextColor"
+                    app:ccp_contentColor="@color/editTextColor"
+                    app:ccp_countryAutoDetectionPref="SIM_NETWORK_LOCALE"
+                    app:ccp_rememberLastSelection="true"
+                    app:ccp_showFlag="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="@dimen/pre_phone_num_CCP_font_size"
+                    app:layout_constraintBottom_toBottomOf="@+id/patientMobileTxt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/patientMobileTxt" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextPatientAddBtn"
+            android:layout_width="@dimen/login_button_weidth"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_marginBottom="@dimen/patient_button_margin_bottom"
+            android:background="@drawable/radius_controller_btn"
+            android:text="@string/next_btn"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/login_button_font_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

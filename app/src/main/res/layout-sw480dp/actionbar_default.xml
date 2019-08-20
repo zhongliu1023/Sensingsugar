@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_height">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorDarkBrown"
+        android:textSize="@dimen/navi_title_font_size" />
+
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="@dimen/login_mobile_num_edittext_height"
+        android:layout_height="@dimen/login_mobile_num_edittext_height"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        app:srcCompat="@drawable/back_img" android:contentDescription="@string/todo" />
+
+</RelativeLayout>

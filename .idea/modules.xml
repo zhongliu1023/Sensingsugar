@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Sensingsugar.iml" filepath="$PROJECT_DIR$/Sensingsugar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpinnerDatePickerLib/SpinnerDatePickerLib.iml" filepath="$PROJECT_DIR$/SpinnerDatePickerLib/SpinnerDatePickerLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circleimagecrop/circleimagecrop.iml" filepath="$PROJECT_DIR$/circleimagecrop/circleimagecrop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easydialog/easydialog.iml" filepath="$PROJECT_DIR$/easydialog/easydialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagerindicator/viewpagerindicator.iml" filepath="$PROJECT_DIR$/viewpagerindicator/viewpagerindicator.iml" />
+    </modules>
+  </component>
+</project>

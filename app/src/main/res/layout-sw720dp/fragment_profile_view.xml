@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient_bk"
+    tools:context="me.sensingself.sensingsugar.Activites.Fragments.TestTab.SeedNeedHelpGuid">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/pvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/navi_title_font_size" />
+
+        <ImageView
+            android:id="@+id/backPvImageView"
+            android:layout_width="@dimen/login_mobile_num_edittext_height"
+            android:layout_height="@dimen/login_mobile_num_edittext_height"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/back_img" />
+
+        <TextView
+            android:id="@+id/pvBackTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/backPvImageView"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/pvSignOutTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/register_link_textview_font_size"
+            android:text="@string/signout_navi_item" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/profileViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/subLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/test_report_imagemark_layout_height"
+                        android:layout_marginTop="@dimen/pv_default_margin_1">
+
+                        <TextView
+                            android:id="@+id/pvThumbNameTxtView"
+                            android:layout_width="@dimen/pv_thumb_size"
+                            android:layout_height="@dimen/pv_thumb_size"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/radius_gradient_textview"
+                            android:gravity="center"
+                            android:text="SR"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/home_diabetic_textview_font_size" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/avatarImageView"
+                            android:layout_width="@dimen/pv_thumb_size"
+                            android:layout_height="@dimen/pv_thumb_size"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            app:civ_border_color="@color/colorPrimaryButton"
+                            app:civ_border_width="2dp" />
+
+                        <TextView
+                            android:id="@+id/addPhotoTxt"
+                            android:layout_width="@dimen/pv_thumb_size"
+                            android:layout_height="@dimen/lastname_editText_height"
+                            android:layout_alignBottom="@+id/pvThumbNameTxtView"
+                            android:layout_centerHorizontal="true"
+                            android:background="#55ffffff"
+                            android:gravity="center_horizontal|center"
+                            android:text="@string/addPhoto"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/pv_cuwell_fontsize" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/pvFullNameTxtView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/pv_default_margin_1"
+                            android:paddingTop="@dimen/pv_default_margin_1"
+                            android:text="Dr.Subramaniam Ramakrishnan"
+                            android:textColor="@color/colorDarkBrown"
+                            android:textSize="@dimen/pv_fullname_fontsize"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pvFullPhoneNumberTxtView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/pvFullNameTxtView"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/pv_default_margin_1"
+                            android:text="+91 9123456789"
+                            android:textSize="@dimen/pv_info_value_fontsize"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/profileMainInfoLinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:paddingEnd="@dimen/pv_default_margin_3"
+                                android:paddingStart="@dimen/pv_default_margin_3">
+
+                                <TextView
+                                    android:id="@+id/pvPatientNamelabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:text="@string/patient_name"
+                                    android:textColor="@color/colorMobileNumberInvalid"
+                                    android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                                <EditText
+                                    android:id="@+id/userFirstNameTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:background="@drawable/radius_controller_textview_white"
+                                    android:ellipsize="middle"
+                                    android:ems="10"
+                                    android:fadeScrollbars="false"
+                                    android:gravity="end"
+                                    android:inputType="textCapSentences"
+                                    android:text="subramanium"
+                                    android:textColor="@color/colorDarkBrown"
+                                    android:textColorLink="@color/colorDarkBrown"
+                                    android:textSize="@dimen/home_value_title_textview_font_size" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginEnd="@dimen/pv_default_margin_3"
+                                android:layout_marginStart="@dimen/pv_default_margin_3"
+                                android:background="@color/colorBorderLine" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/pv_default_margin_2"
+                                android:layout_marginTop="@dimen/pv_default_margin_2"
+                                android:paddingEnd="@dimen/pv_default_margin_3"
+                                android:paddingStart="@dimen/pv_default_margin_3">
+
+                                <TextView
+                                    android:id="@+id/pvSurNamelabel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:text="@string/surname"
+                                    android:textColor="@color/colorMobileNumberInvalid"
+                                    android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                                <EditText
+                                    android:id="@+id/userLastNameTxt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:background="@drawable/radius_controller_textview_white"
+                                    android:ellipsize="middle"
+                                    android:ems="10"
+                                    android:fadeScrollbars="false"
+                                    android:gravity="end"
+                                    android:inputType="textCapSentences"
+                                    android:text="Ramakrizhnan"
+                                    android:textColor="@color/colorDarkBrown"
+                                    android:textColorLink="@color/colorDarkBrown"
+                                    android:textSize="@dimen/home_value_title_textview_font_size" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginEnd="@dimen/pv_default_margin_3"
+                                android:layout_marginStart="@dimen/pv_default_margin_3"
+                                android:background="@color/colorBorderLine" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="@dimen/pv_default_margin_3"
+                                android:paddingStart="@dimen/pv_default_margin_3">
+
+                                <TextView
+                                    android:id="@+id/pvMobileLabel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.45"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/mobile"
+                                    android:textColor="@color/colorMobileNumberInvalid"
+                                    android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                                <com.hbb20.CountryCodePicker
+                                    android:id="@+id/editProfileCCP"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:gravity="center"
+                                    app:ccpDialog_allowSearch="true"
+                                    app:ccpDialog_showCloseIcon="true"
+                                    app:ccpDialog_textColor="@color/colorDarkBrown"
+                                    app:ccp_contentColor="@color/colorDarkBrown"
+                                    app:ccp_countryAutoDetectionPref="SIM_NETWORK_LOCALE"
+                                    app:ccp_rememberLastSelection="true"
+                                    app:ccp_showFlag="false"
+                                    app:ccp_showNameCode="false"
+                                    app:ccp_textSize="@dimen/pv_info_value_fontsize" />
+
+                                <EditText
+                                    android:id="@+id/editPhoneNumberEditView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.35"
+                                    android:background="@drawable/radius_controller_textview_white"
+                                    android:ellipsize="middle"
+                                    android:ems="10"
+                                    android:fadeScrollbars="false"
+                                    android:gravity="fill_vertical|end"
+                                    android:inputType="phone"
+                                    android:textColor="@color/colorDarkBrown"
+                                    android:textColorLink="@color/colorDarkBrown"
+                                    android:textSize="@dimen/home_value_title_textview_font_size" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorBorderLine"
+                                android:paddingEnd="@dimen/pv_default_margin_3"
+                                android:paddingStart="@dimen/pv_default_margin_3" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/btnEditProfile"
+                            android:layout_width="@dimen/test_report_imagemark_layout_height"
+                            android:layout_height="@dimen/pv_profile_edit_button_height"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/pv_default_margin_4"
+                            android:layout_marginTop="@dimen/pv_default_margin_2"
+                            android:background="@drawable/radius_controller_btn"
+                            android:gravity="center"
+                            android:text="Edit Profile"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/pv_profile_edit_button_fontsize"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/underLineView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine" />
+
+                <TextView
+                    android:id="@+id/pvServicePerformanceTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/pv_default_margin_3"
+                    android:paddingTop="@dimen/pv_default_margin_3"
+                    android:text="@string/service_performance"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvTotalReadingsTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_readings"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/pvTotalReadingsValueTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="1250"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/underLineView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/pv_default_margin_3"
+                    android:layout_marginStart="@dimen/pv_default_margin_3"
+                    android:background="@color/colorBorderLine" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvTotalPatientsTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_patients"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/pvTotalPatitentsValueTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="1000"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/underLineView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvTestingPeriodTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/testing_period"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/pvTestingPeriodValueTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="25 Days"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/underLineView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine" />
+
+                <TextView
+                    android:id="@+id/pvServedForTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/pv_default_margin_3"
+                    android:paddingTop="@dimen/pv_default_margin_3"
+                    android:text="@string/servied_for"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvInstitutionTypeTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/institution_type"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/pvInstitutionTypeValueTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Clinic"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <Spinner
+                        android:id="@+id/spinnerInstitutionType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:overlapAnchor="false" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/underLineView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvNameInstitutionTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/name_of_institution"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <EditText
+                        android:id="@+id/pvNameInstitutionValueTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_controller_textview_white"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:gravity="end"
+                        android:inputType="textCapSentences"
+                        android:text="Dr.Subramaniam's Clinic"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textColorLink="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/underLineView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvStateTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/state"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <EditText
+                        android:id="@+id/pvStateValueTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_controller_textview_white"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:gravity="end"
+                        android:inputType="textCapSentences"
+                        android:text="Madhya Pradesh"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textColorLink="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/underLineView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvCityTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/city"
+                        android:textColor="@color/colorMobileNumberInvalid"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <EditText
+                        android:id="@+id/pvCityValueTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_controller_textview_white"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:gravity="end"
+                        android:inputType="textCapSentences"
+                        android:text="Bhopal"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textColorLink="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/underLineView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvAadhaarTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/aadhaar_num"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <EditText
+                        android:id="@+id/pvAadhaarValueEditView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_controller_textview_white"
+                        android:ellipsize="middle"
+                        android:ems="10"
+                        android:fadeScrollbars="false"
+                        android:gravity="end"
+                        android:inputType="textCapSentences"
+                        android:maxLength="12"
+                        android:text="123456789098"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textColorLink="@color/colorDarkBrown"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/underLineView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvSupporttxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/support"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text=">" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/underLineView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pv_default_margin_2"
+                    android:layout_marginTop="@dimen/pv_default_margin_2"
+                    android:paddingEnd="@dimen/pv_default_margin_3"
+                    android:paddingStart="@dimen/pv_default_margin_3">
+
+                    <TextView
+                        android:id="@+id/pvTermsConditionsTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/term_and_conditions"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text=">" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/underLineView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBorderLine" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/pv_default_margin_2"
+                    android:paddingLeft="@dimen/pv_default_margin_4"
+                    android:paddingRight="@dimen/pv_default_margin_4"
+                    android:paddingTop="@dimen/pv_default_margin_4">
+
+
+                    <TextView
+                        android:id="@+id/pvSoftwareVersionTxtView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/software_version"
+                        android:textColor="@color/colorPrimaryButton"
+                        android:textSize="@dimen/pv_software_fontsize" />
+
+                    <ImageView
+                        android:id="@+id/sensingsuarLogo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/login_button_height"
+                        android:gravity="center"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:src="@drawable/sensingsugar" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

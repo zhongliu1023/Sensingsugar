@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient_bk"
+    tools:context="me.sensingself.sensingsugar.Activites.Fragments.TestTab.SeedNeedHelpGuid">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/guid_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/navi_title_font_size" />
+
+        <ImageView
+            android:id="@+id/backGuidImageView"
+            android:layout_width="@dimen/login_mobile_num_edittext_height"
+            android:layout_height="@dimen/login_mobile_num_edittext_height"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/back_img" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/noteGuidTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_start"
+            android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+            android:layout_marginTop="@dimen/patient_note_textview_margin_top"
+            android:text="@string/note_guid"
+            android:textAlignment="center"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/home_value_title_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/guidTxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_start"
+            android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+            android:layout_marginTop="@dimen/patient_note_textview_margin_top"
+            android:text="@string/guid_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/login_mobile_num_title_textview_font_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noteGuidTxt" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffd5e4</color>
+    <color name="colorPrimaryDark">#ffd5e4</color>
+    <color name="colorPrimaryButton">#ce7b99</color>
+    <color name="colorAccent">#402312</color>
+    <color name="colorBlueGradient">#b4e1e3</color>
+    <color name="colorPinkGradient">#f6b2d0</color>
+    <color name="colorDarkBrown">#402312</color>
+    <color name="colorBrown">#674849</color>
+    <color name="colorLightBrown">#d2b5af</color>
+    <color name="colorLightGray">#f2f0ee</color>
+    <color name="colorLightBrownForNote">#9e938b</color>
+    <color name="colorMobileNumberInvalid">#8f8f8f</color>
+    <color name="shadow">#AAefefef</color>
+    <color name="shadowPlat">#11000000</color>
+    <color name="colorResultDark">#9c1c61</color>
+    <color name="colorResult">#f387a1</color>
+    <color name="colorResultLight">#f8b1db</color>
+    <color name="colorBorderLine">#d2d2d2</color>
+    <color name="segmentColorDark">#ce7b99</color>
+    <color name="segmentColorMedium">#eeced9</color>
+    <color name="segmentColorDarkGray">#9d9d9d</color>
+    <color name="segmentColorMediumGray">#cecece</color>
+
+    <color name="segmentColorLight">#f9f2f5</color>
+    <color name="headerDark">#db9eb4</color>
+    <color name="headerLight">#f9f2f5</color>
+    <color name="translucentWhite">#00ffffff</color>
+    <color name="platBackgroundColor">#f2f0ee</color>
+    <color name="editTextColor">#AF482B0E</color>
+    <color name="homeGradientDark">#f6b2d0</color>
+</resources>

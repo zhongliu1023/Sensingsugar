@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">Sensing.Sugar</string>
+
+
+    <string name="no_internet_connection_msg">Please check your WiFi or cellular data network and try again</string>
+    <string name="no_intenet_connection_title">No Internet Connection</string>
+    <string name="internet_connection">Please check your Internet connection.</string>
+    <string name="error_login">Unable to login, please try again</string>
+    <string name="error_verification">Unable to verify, please try again</string>
+    <string name="incorrect_login_credentials"><![CDATA[It seems you have entered incorrect phone number. Please try again.]]></string>
+    <string name="incorrect_verification_code_credentials"><![CDATA[It seems you have entered incorrect verfication code. Please try again.]]></string>
+    <string name="something_went_wrong">Something went wrong,Please try again later.</string>
+
+    <string name="pre_app_name"><![CDATA[<font color=#664849>sensing.</font><font color=#d1b5af>sugar</font>]]></string>
+    <string name="tail_app_name">sugar</string>
+    <string name="loading_pre_content">Lorem ipsum dolor sit amet,\nconsecteture adipiscing elit, sed do\neiusmod tempor incididunt ut labore\net dolore magna aliqua.</string>
+    <string name="hello">Hello!</string>
+    <string name="enter_phone_num">Please enter your mobile number.</string>
+    <string name="login_btn">Login</string>
+    <string name="register_btn">Register</string>
+    <string name="register_link_label"><![CDATA[<font color=#d1b5af>I would like to </font><font color=#472c10>Register</font>]]></string>
+    <string name="enter_6_digit_code">Please enter the 6 digit code that is sent.</string>
+    <string name="done_btn">Done</string>
+    <string name="if_incase_you_do_not_recive_code">If incase you do not recieve a code.<![CDATA[<br/><font color=#472c10>click here</font>]]> to resend it to your mobile.</string>
+    <string name="click_here">click here </string>
+    <string name="to_resend_it_your_mobile"> to resend it to your mobile.</string>
+    <string name="i_agree">I agree.</string>
+    <string name="view_terms"><u>View Terms</u></string>
+    <string name="next_btn">Next</string>
+    <string name="update_btn">Update</string>
+    <string name="thank_you_for_assisting_others">Thank you for assisting others\nto test their health!</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="aadhaar">Aadhaar</string>
+    <string name="aadhaar_optional">Aadhaar <i><small>(optional)</small></i></string>
+    <string name="institution_type">Institution Type</string>
+    <string name="name_of_institution">Name of Institution</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="we_respect_your_privacy">WE RESPECT YOUR PRIVACY.\nYOUR PROFILE WILL NOT BE SHARED.</string>
+    <string name="todo">TODO</string>
+    <string name="_91">+91</string>
+    <string name="textview">TextView</string>
+
+
+    <string name="nav_register">Register</string>
+    <string name="nav_verify_mobile_num">Verify Mobile Number</string>
+    <string name="nav_your_profile">Your Profile</string>
+    <string name="news">Health News</string>
+    <string name="pre_diabetic">Pre-Diabetic</string>
+    <string name="diabetic">Diabetic</string>
+    <string name="total_readings">Total Readings</string>
+    <string name="total_patients">Total Patients</string>
+
+
+
+    <string name="error_in_json">Error json provided by server</string>
+
+
+    <string name="identify">Identify</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="surname">Surname</string>
+    <string name="note_fill_patient_identify">Please provide information to add a\nnew patient, or search for an old patient.</string>
+    <string name="or">or</string>
+    <string name="search_btn">Search</string>
+    <string name="add_btn">Add</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Date of Birth</string>
+    <string name="mobile_opt">Mobile</string>
+    <string name="aadhaar_patient">Aadhaar</string>
+
+    <string name="note_add_patient_info">For Accurate Reports, please share\ndetails for the patient.</string>
+    <string name="note_begin_test">Please select the type of test you\nwish to take.</string>
+    <string name="blood_sugar">Blood Sugar</string>
+    <string name="fasting_blood_sugar">Before Breakfast (Fasting)</string>
+    <string name="postprandial_blood_sugar">Post Meal (After 2 hours)</string>
+    <string name="random_blood_sugar">Random (Any time of the Day)</string>
+    <string name="begin_test">Begin Test</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="test_guid"><![CDATA[<font color=#d1b5af>Need to see the </font><font color=#472c10>test guide?</font>]]></string>
+    <string name="add_patient_info">Add Patient Info</string>
+    <string name="edit_patient_info">Update Patient Info</string>
+    <string name="take_photo_note">Please make sure the light is bright for taking\nthe photo and also, your test spoon must be\naligned into this.</string>
+
+    <string name="need_help">Need Help?</string>
+    <string name="note_guid">Please follow the below steps to accurately\nmeasure the patient's glucose levels.</string>
+    <string name="guid_content">1. Spit in Sensing.Sugar Test Strip\n\n\n2. Place the Sensing.Sugar Test strip\non a flat surface and wait for 2 \nminutes, Please do not move the test\nstrip during this duration.\n\n\n3. Pick up the test strip and take an \nimage of the test strip using the \nSensing.Sugar App.</string>
+    <string name="back">Back</string>
+    <string name="testreport">Test Report</string>
+    <string name="retaketest_navi_item">Re-Take Test</string>
+    <string name="takeNewtest_navi_item">Take New Test</string>
+    <string name="reports">Reports</string>
+
+    <string name="testtype">Test Type</string>
+    <string name="bmi">B.M.I</string>
+    <string name="age">Age</string>
+    <string name="testguide">Test Guide</string>
+    <string name="this_month_avg">Average Result For </string>
+
+    <string name="service_performance">Service Performance</string>
+    <string name="servied_for">Served For</string>
+    <string name="support">Support</string>
+    <string name="term_and_conditions">Terms &amp; Conditions</string>
+    <string name="software_version">Software Version 1.1</string>
+    <string name="cu_wellness">CU Wellness, Inc. 2018</string>
+    <string name="signout_navi_item">Sign Out</string>
+    <string name="profile">Profile</string>
+    <string name="testing_period">Testing Period</string>
+
+    <string name="rinse">Rinse</string>
+    <string name="rinse_note">Rinse your mouth with water and\nwait for 2 minutes.</string>
+    <string name="minutes">minutes</string>
+    <string name="holdSaliva">Hold Saliva</string>
+    <string name="holdSaliva_note">Minimize swallowing and hold saliva\nin your mouth for 1 minute.</string>
+    <string name="begintest_note">Place the spoon in your mouth, under the\ntongue (where the saliva is collected).</string>
+    <string name="processingTest">Processing Test</string>
+    <string name="processingTest_note">Remove the spoon and place it on a flat\nsurface, safely for 5 minutes.</string>
+
+    <string name="logout">Do you really want to log out ?</string>
+    <string name="changeSave">Do you want to save the chagnes?</string>
+    <string name="noTestingResults">Current Patient doesn\'t have testingresult, Do you want to test?</string>
+    <string name="understand_how_to_read_result_number">How to read Result/Number</string>
+
+    <string name="su_title">Patients</string>
+
+    <string name="select_date">Select Date</string>
+    <string name="search_by">Search By</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="fullname">Full Name</string>
+    <string name="aadhaar_num">Aadhaar Number</string>
+    <string name="digit_num_12">12 Digit Number</string>
+
+    <string name="share">Share</string>
+    <string name="avg_reading">Avg. Reading</string>
+    <string name="testPeriod">Test Period</string>
+
+    <string name="edit">Edit</string>
+    <string name="contact">Contact</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="bioData">Bio Data</string>
+    <string name="districtAadhaar">District (Aadhaar)</string>
+    <string name="stateAadhaar">State (Aadhaar)</string>
+
+    <string name="beginTesting">Begin Testing</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="addPhoto">Add Photo</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+
+    <string name="veryHigh">Very High</string>
+    <string name="high">High</string>
+    <string name="normal">Normal</string>
+    
+    <string name="understandingDiabetes">Understanding Diabetes</string>
+    <string name="datePicker_setButton">OK</string>
+    <string name="datePicker_clearButton">CLEAR</string>
+    <string name="datePicker_cancelButton">CANCEL</string>
+
+
+    <string name="unable_to_crop">Unable to crop</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="take_from_camera">Take From Camera</string>
+    <string name="unable_to_get_image">Unable to get image</string>
+    <string name="no_image">Image not found</string>
+    <string name="accessing_error_file">Error accessing file</string>
+    <string name="select_picture">Select Picture</string>
+
+    <string name="please_check_strip">Please check this strip-photo.</string>
+    <string name="retake_photo">Retake Photo</string>
+    <string name="proceed">Proceed</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+
+    <string name="noReports">You don\'t have reports. Please start testing.</string>
+    <string name="no_sharing">Please select reports to share!</string>
+
+</resources>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/pink_gradient_light_bk"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/blue_gradient_bk"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/navRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/reportsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/navi_title_font_size" />
+
+        <ImageView
+            android:id="@+id/searchBackImageView"
+            android:layout_width="@dimen/login_mobile_num_edittext_height"
+            android:layout_height="@dimen/login_mobile_num_edittext_height"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/back_img" />
+
+        <TextView
+            android:id="@+id/shareTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="17dp"
+            android:text="@string/share"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/register_link_textview_font_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_greeting_layout_margin_top"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navRelativeLayout">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_greeting_textview_margin_start"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/patientNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="Hello subramaniyam!"
+                android:textColor="@color/colorDarkBrown"
+                android:textSize="@dimen/home_greeting_font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/patientAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Ram Nagar, MP"
+                android:textColor="@color/colorDarkBrown"
+                android:textSize="@dimen/home_value_title_textview_font_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/patientAvatarIamgeView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="0.2"
+            android:contentDescription="@string/todo"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:visibility="visible"
+            app:srcCompat="@drawable/profile_man" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/home_greeting_textview_margin_start"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/testPeriodTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+            android:gravity="center_vertical"
+            android:text="Total Tests:"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/pv_cuwell_fontsize" />
+
+        <TextView
+            android:id="@+id/testPeriodValueTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/testPeriodTxt"
+            android:gravity="center_vertical"
+            android:text="15 in 30 days (1.1.2018 to 20.1.2018)"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/pv_cuwell_fontsize" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutTotal">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_mobile_num_edittext_height"
+                android:background="@drawable/gradient_hearder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/lastReadingTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center_vertical"
+                    android:text="Last Reading"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/fastingTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center"
+                        android:text="Fasting"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/pv_cuwell_fontsize" />
+
+                    <TextView
+                        android:id="@+id/currentMgdlValue"
+                        android:layout_width="@dimen/pre_phone_num_CCP_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/fastingTxt"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorResultDark"
+                        android:textSize="@dimen/pv_sensingsugar_fontsize" />
+
+                    <TextView
+                        android:id="@+id/currentMmolValue"
+                        android:layout_width="@dimen/pre_phone_num_CCP_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/currentMgdlValue"
+                        android:layout_alignBottom="@+id/currentMgdlValue"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorResultDark"
+                        android:textSize="@dimen/pv_sensingsugar_fontsize" />
+
+                    <TextView
+                        android:id="@+id/mgdlLabel"
+                        android:layout_width="@dimen/pre_phone_num_CCP_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/currentMgdlValue"
+                        android:layout_below="@+id/currentMgdlValue"
+                        android:gravity="center_horizontal"
+                        android:text="mg/dl"
+                        android:textColor="@color/segmentColorDarkGray"
+                        android:textSize="@dimen/pv_software_fontsize" />
+
+                    <TextView
+                        android:id="@+id/mmolLLabl"
+                        android:layout_width="@dimen/pre_phone_num_CCP_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/currentMmolValue"
+                        android:layout_below="@+id/currentMmolValue"
+                        android:gravity="center_horizontal"
+                        android:text="mmol/L"
+                        android:textColor="@color/segmentColorDarkGray"
+                        android:textSize="@dimen/pv_software_fontsize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/postMealTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center"
+                        android:text="Post Meal"
+                        android:textColor="@color/colorDarkBrown"
+                        android:textSize="@dimen/pv_cuwell_fontsize" />
+
+                    <TextView
+                        android:id="@+id/postCurrentMgdlVal"
+                        android:layout_width="@dimen/pre_phone_num_CCP_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/postMealTxt"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorResult"
+                        android:textSize="@dimen/pv_sensingsugar_fontsize" />
+
+                    <TextView
+                        android:id="@+id/postCurrentMmolVal"
+                        android:layout_width="@dimen/pre_phone_num_CCP_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/postCurrentMgdlVal"
+                        android:layout_alignBottom="@+id/postCurrentMgdlVal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorResult"
+                        android:textSize="@dimen/pv_sensingsugar_fontsize" />
+
+                    <TextView
+                        android:id="@+id/mgdlLabel1"
+                        android:layout_width="@dimen/pre_phone_num_CCP_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/postCurrentMgdlVal"
+                        android:layout_below="@+id/postCurrentMgdlVal"
+                        android:gravity="center_horizontal"
+                        android:text="mg/dl"
+                        android:textColor="@color/segmentColorDarkGray"
+                        android:textSize="@dimen/pv_software_fontsize" />
+
+                    <TextView
+                        android:id="@+id/mmolLLabel1"
+                        android:layout_width="@dimen/pre_phone_num_CCP_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/postCurrentMmolVal"
+                        android:layout_below="@+id/postCurrentMmolVal"
+                        android:gravity="center_horizontal"
+                        android:text="mmol/L"
+                        android:textColor="@color/segmentColorDarkGray"
+                        android:textSize="@dimen/pv_software_fontsize" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/headerMonthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_hearder"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/checkboxLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15">
+
+                <ImageView
+                    android:id="@+id/resultCheckBox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/check_agree" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.85"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/cyclePreMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cycle_left_arrow" />
+
+                <TextView
+                    android:id="@+id/monthTxtView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="Jan 2017"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/cycleNextMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cycle_right_arrow" />
+
+                <TextView
+                    android:id="@+id/reportsTxtView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="left|center_vertical"
+                    android:text="199 REPORTS"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/levelTxtView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="right|center_vertical"
+                    android:text="HIGH / LOW"
+                    android:textColor="@color/headerDark"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/resultsList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerMonthLayout" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

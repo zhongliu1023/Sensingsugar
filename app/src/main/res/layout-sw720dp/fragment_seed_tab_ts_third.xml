@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tsLabelTxtView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/begin_test"
+        android:textColor="@color/colorDarkBrown"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tsNoteTxtView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/begintest_note"
+        android:textColor="@color/colorDarkBrown"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tsLabelTxtView"
+        app:layout_constraintStart_toStartOf="@+id/tsLabelTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/tsLabelTxtView" />
+
+    <ImageView
+        android:id="@+id/tsImageView"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toTopOf="@+id/timeTxtView"
+        app:layout_constraintEnd_toEndOf="@+id/tsNoteTxtView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tsNoteTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/tsNoteTxtView"
+        app:srcCompat="@drawable/test_thrid" />
+
+    <TextView
+        android:id="@+id/timeTxtView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="2:00"
+        android:textColor="@color/colorDarkBrown"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/minutesTxtView"
+        app:layout_constraintEnd_toEndOf="@+id/tsImageView"
+        app:layout_constraintStart_toStartOf="@+id/tsImageView" />
+
+    <TextView
+        android:id="@+id/minutesTxtView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="@string/minutes"
+        android:textColor="@color/colorDarkBrown"
+        app:layout_constraintBottom_toTopOf="@+id/clockImageView"
+        app:layout_constraintEnd_toEndOf="@+id/timeTxtView"
+        app:layout_constraintStart_toStartOf="@+id/timeTxtView" />
+
+    <ImageView
+        android:id="@+id/clockImageView"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/minutesTxtView"
+        app:layout_constraintStart_toStartOf="@+id/minutesTxtView"
+        app:srcCompat="@drawable/tap_to_start" />
+</android.support.constraint.ConstraintLayout>

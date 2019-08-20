@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sensingTxtView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/patient_button_margin_bottom"
+        android:layout_marginEnd="@dimen/sesingsugar_title_txtview_margin_end"
+        android:layout_marginStart="@dimen/sesingsugar_title_txtview_margin_start"
+        android:gravity="center"
+        android:text="@string/pre_app_name"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBrown"
+        android:textSize="@dimen/ca_take_photo_fontsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/verifynext_button_margin_bottom"
+        android:layout_marginTop="@dimen/login_button_margin_bottom"
+        app:layout_constraintBottom_toTopOf="@+id/sensingTxtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_spoon" />
+
+</android.support.constraint.ConstraintLayout>

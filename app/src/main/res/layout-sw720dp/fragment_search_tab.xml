@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchTabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient_bk"
+    tools:context="me.sensingself.sensingsugar.Activites.Fragments.TestTab.SeedFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/search_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/navi_title_font_size" />
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/selectDateTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_plattitle_textview_margin_start"
+            android:layout_marginTop="@dimen/agree_imageview_margin_top"
+            android:text="@string/select_date"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/home_plat_title_textview_font_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/selectDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/agree_imageview_margin_top"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectDateTxtView">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/login_mobile_num_edittext_height"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fromDataTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/home_valueplat_linerlayout_margin_bottom"
+                    android:layout_marginStart="@dimen/agree_imageview_margin_top"
+                    android:background="@drawable/radius_controller_textview"
+                    android:ellipsize="middle"
+                    android:ems="10"
+                    android:fadeScrollbars="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/from"
+                    android:paddingEnd="@dimen/firstname_editText_padding_end"
+                    android:paddingStart="@dimen/firstname_editText_padding_start"
+                    android:textColor="@color/colorDarkBrown"
+                    android:textColorLink="@color/colorDarkBrown"
+                    android:textSize="@dimen/editView_default_font_size" />
+
+                <ImageView
+                    android:id="@+id/fromCalendarImage"
+                    android:layout_width="@dimen/login_mobile_num_edittext_height"
+                    android:layout_height="match_parent"
+                    android:layout_alignEnd="@+id/fromDataTxtView"
+                    android:layout_alignParentBottom="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/calendar" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/login_mobile_num_edittext_height"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/toDataTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/agree_imageview_margin_top"
+                    android:layout_marginStart="@dimen/home_valueplat_linerlayout_margin_bottom"
+                    android:background="@drawable/radius_controller_textview"
+                    android:ellipsize="middle"
+                    android:ems="10"
+                    android:fadeScrollbars="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/to"
+                    android:paddingEnd="@dimen/firstname_editText_padding_end"
+                    android:paddingStart="@dimen/firstname_editText_padding_start"
+                    android:textColor="@color/colorDarkBrown"
+                    android:textColorLink="@color/colorDarkBrown"
+                    android:textSize="@dimen/editView_default_font_size" />
+
+                <ImageView
+                    android:id="@+id/toCalendarImage"
+                    android:layout_width="@dimen/login_mobile_num_edittext_height"
+                    android:layout_height="match_parent"
+                    android:layout_alignEnd="@+id/toDataTxtView"
+                    android:layout_alignParentBottom="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/calendar" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/searchByTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_plattitle_textview_margin_start"
+            android:layout_marginTop="@dimen/patient_button_margin_bottom"
+            android:text="@string/search_by"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/home_plat_title_textview_font_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectDateLayout" />
+
+        <LinearLayout
+            android:id="@+id/searchBySelectionLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/agree_imageview_margin_top"
+            android:layout_marginStart="@dimen/agree_imageview_margin_top"
+            android:layout_marginTop="@dimen/agree_imageview_margin_top"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchByTxtView">
+
+            <TextView
+                android:id="@+id/fullnameSearchByBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/segment_hegiht"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/radius_parallelogram_gradiant_dark"
+                android:text="@string/fullname"
+                android:textColor="@color/colorDarkBrown"
+                android:textSize="@dimen/register_link_textview_font_size" />
+
+            <TextView
+                android:id="@+id/aadhaarSearchByBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/segment_hegiht"
+                android:layout_weight="1"
+                android:background="@drawable/radius_parallelogram_gradiant_light_right"
+                android:gravity="center"
+                android:text="@string/aadhaar_num"
+                android:textColor="@color/colorDarkBrown"
+                android:textSize="@dimen/register_link_textview_font_size" />
+
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/aadhaarSearchByConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/patientname_constraint_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchBySelectionLayout">
+
+            <EditText
+                android:id="@+id/aadhaarSearchKeyEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/login_mobile_num_edittext_height"
+                android:layout_marginEnd="@dimen/home_plattitle_textview_margin_start"
+                android:layout_marginStart="@dimen/home_plattitle_textview_margin_start"
+                android:layout_marginTop="@dimen/login_mobile_num_edittext_margin_start"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:textColorHint="@color/colorLightBrownForNote"
+                android:fadeScrollbars="false"
+                android:hint="@string/digit_num_12"
+                android:inputType="number"
+                android:maxLength="12"
+                android:paddingEnd="@dimen/firstname_editText_padding_end"
+                android:paddingStart="@dimen/firstname_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/fullNameSearchByConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/patientname_constraint_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchBySelectionLayout">
+
+            <EditText
+                android:id="@+id/patientNameSearchKeyEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/login_mobile_num_edittext_height"
+                android:layout_marginEnd="@dimen/home_plattitle_textview_margin_start"
+                android:layout_marginStart="@dimen/home_plattitle_textview_margin_start"
+                android:layout_marginTop="@dimen/login_mobile_num_edittext_margin_start"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:hint="@string/patient_name"
+                android:textColorHint="@color/colorLightBrownForNote"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/firstname_editText_padding_end"
+                android:paddingStart="@dimen/firstname_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/surnameSearchKeyEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/login_mobile_num_edittext_height"
+                android:layout_marginBottom="@dimen/login_mobile_num_edittext_margin_start"
+                android:layout_marginEnd="@dimen/home_plattitle_textview_margin_start"
+                android:layout_marginStart="@dimen/home_plattitle_textview_margin_start"
+                android:background="@drawable/radius_controller_textview"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:hint="@string/surname"
+                android:textColorHint="@color/colorLightBrownForNote"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/firstname_editText_padding_end"
+                android:paddingStart="@dimen/firstname_editText_padding_start"
+                android:textColor="@color/editTextColor"
+                android:textSize="@dimen/editView_default_font_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="@dimen/patient_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/radius_control_btn_1"
+            android:text="@string/search_btn"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/login_button_font_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

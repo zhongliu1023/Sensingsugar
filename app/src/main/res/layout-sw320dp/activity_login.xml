@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.sensingself.sensingsugar.Activites.LoginRegisterProfile.LoginActivity"
+    android:background="@drawable/blue_gradient_bk"
+    android:id="@+id/parentLogin">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <ImageView
+            android:id="@+id/sensingsuarLogo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_title_txtview_height"
+            android:layout_marginTop="@dimen/login_title_txtview_margin_top"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sensingsugar" />
+
+        <TextView
+            android:id="@+id/helloTxtView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hello_txtview_maring_top"
+            android:fontFamily="serif"
+            android:text="@string/hello"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/hello_txtview_font_size"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sensingsuarLogo" />
+
+        <TextView
+            android:id="@+id/mobileNumTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_mobile_num_title_textview_maring_top"
+            android:text="@string/enter_phone_num"
+            android:textAlignment="center"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/login_mobile_num_title_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helloTxtView" />
+
+        <EditText
+            android:id="@+id/mobileNumberTextForLogin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_mobile_num_edittext_height"
+            android:layout_marginEnd="@dimen/login_mobile_num_edittext_margin_end"
+            android:layout_marginStart="@dimen/login_mobile_num_edittext_margin_start"
+            android:layout_marginTop="@dimen/login_mobile_num_edittext_margin_top"
+            android:background="@drawable/radius_controller_textview"
+            android:ellipsize="middle"
+            android:ems="10"
+            android:fadeScrollbars="false"
+            android:inputType="phone"
+            android:paddingEnd="@dimen/login_mobile_num_edittext_padding_end"
+            android:paddingStart="@dimen/login_mobile_num_edittext_padding_start"
+            android:textColor="@color/editTextColor"
+            android:textSize="@dimen/login_mobile_num_edittext_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileNumTitle" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="@dimen/login_button_weidth"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_marginBottom="@dimen/login_button_margin_bottom"
+            android:background="@drawable/radius_controller_btn"
+            android:text="@string/login_btn"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/login_button_font_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/registerLinkFromLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/registerLinkFromLogin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/register_link_textview_height"
+            android:layout_marginBottom="@dimen/register_link_textview_margin_bottom"
+            android:text="@string/register_link_label"
+            android:textAlignment="center"
+            android:textSize="@dimen/register_link_textview_font_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/loginPreCCP"
+            android:layout_width="@dimen/pre_phone_num_CCP_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/pre_phone_num_CCP_margin_start"
+            app:layout_constraintBottom_toBottomOf="@+id/mobileNumberTextForLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mobileNumberTextForLogin"
+            app:ccp_contentColor="@color/editTextColor"
+            app:ccp_textSize="@dimen/pre_phone_num_CCP_font_size"
+            app:ccpDialog_textColor="@color/editTextColor"
+            app:ccpDialog_allowSearch="true"
+            app:ccp_rememberLastSelection="true"
+            app:ccp_countryAutoDetectionPref="SIM_NETWORK_LOCALE"
+            app:ccpDialog_showCloseIcon="true"
+            app:ccp_showFlag="false"
+            app:ccp_showNameCode="false"/>
+
+        <TextView
+            android:id="@+id/versionTxtView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/pv_software_fontsize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

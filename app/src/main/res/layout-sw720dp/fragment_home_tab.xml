@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:background="@drawable/pink_gradient_bk">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:background="@drawable/blue_gradient_bk">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_greeting_layout_height"
+            android:layout_marginTop="@dimen/home_greeting_layout_margin_top"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/greetingUser"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/home_greeting_textview_margin_start"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="Hello subramaniyam!"
+                android:textColor="@color/colorDarkBrown"
+                android:textSize="@dimen/home_greeting_font_size"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/profile_man"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.dd.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/home_valueplat_linerlayout_shadow_margin_bottom"
+                android:layout_marginLeft="@dimen/home_valueplat_linerlayout_shadow_margin_left_right"
+                android:layout_marginRight="@dimen/home_valueplat_linerlayout_shadow_margin_left_right"
+                android:layout_marginTop="@dimen/home_valueplat_linerlayout_shadow_margin_top"
+                android:layout_weight="0.42"
+                app:sl_cornerRadius="10dp"
+                app:sl_shadowColor="@color/shadowPlat">
+
+                <LinearLayout
+                    android:id="@+id/statusCardLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/home_valueplat_linerlayout_margin_bottom"
+                    android:layout_marginLeft="@dimen/home_valueplat_linerlayout_margin_left_right"
+                    android:layout_marginRight="@dimen/home_valueplat_linerlayout_margin_left_right"
+                    android:background="@drawable/radius_plat_default"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/todayTxtView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginStart="@dimen/home_plattitle_textview_margin_start"
+                            android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                            android:gravity="center_vertical"
+                            android:text="10, December 2017"
+                            android:textColor="@color/colorDarkBrown"
+                            android:textSize="@dimen/home_plat_title_textview_font_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginEnd="@dimen/home_plattitle_textview_margin_start"
+                            android:layout_marginStart="@dimen/home_plattitle_textview_margin_start"
+                            android:layout_marginTop="-1dp"
+                            android:background="@color/colorLightGray">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.75">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.55"
+                                android:baselineAligned="false"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/totalReadingsTxtView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_marginStart="@dimen/home_values_textview_margin_start"
+                                        android:layout_marginTop="7dp"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/total_readings"
+                                        android:textColor="@color/colorDarkBrown"
+                                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                                    <TextView
+                                        android:id="@+id/readingsCountTxtView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_marginStart="@dimen/home_values_textview_margin_start"
+                                        android:layout_weight="0.7"
+                                        android:text="0"
+                                        android:textColor="#5d5d5d"
+                                        android:textSize="@dimen/home_total_textview_font_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/totalPatientTxtView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_marginStart="@dimen/home_values_textview_margin_start"
+                                        android:layout_marginTop="7dp"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/total_patients"
+                                        android:textColor="@color/colorDarkBrown"
+                                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                                    <TextView
+                                        android:id="@+id/patentCountTxtView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_marginStart="@dimen/home_values_textview_margin_start"
+                                        android:layout_weight="0.7"
+                                        android:text="0"
+                                        android:textColor="#5d5d5d"
+                                        android:textSize="@dimen/home_total_textview_font_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.45"
+                                android:baselineAligned="false"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/diabeticTitleTxtView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_marginStart="@dimen/home_values_textview_margin_start"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/diabetic"
+                                        android:textColor="@color/colorDarkBrown"
+                                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                                    <TextView
+                                        android:id="@+id/diabeticValueTxtView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_marginStart="@dimen/home_values_textview_margin_start"
+                                        android:layout_weight="0.7"
+                                        android:text="0"
+                                        android:textColor="@color/colorResultDark"
+                                        android:textSize="@dimen/home_diabetic_textview_font_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/preDiabeticTitleTxtView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_marginStart="@dimen/home_values_textview_margin_start"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/pre_diabetic"
+                                        android:textColor="@color/colorDarkBrown"
+                                        android:textSize="@dimen/home_value_title_textview_font_size" />
+
+                                    <TextView
+                                        android:id="@+id/preDiabeticValueTxtView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_marginStart="@dimen/home_values_textview_margin_start"
+                                        android:layout_weight="0.7"
+                                        android:text="0"
+                                        android:textColor="@color/colorPrimaryButton"
+                                        android:textSize="@dimen/home_diabetic_textview_font_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/noResultLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@android:color/white"
+                            android:visibility="gone">
+
+                            <Button
+                                android:id="@+id/beginTestingBtn"
+                                android:layout_width="@dimen/bloodtype_constraint_height"
+                                android:layout_height="@dimen/login_button_height"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/radius_controller_btn"
+                                android:text="@string/beginTesting"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/login_button_font_size"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.05"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+            </com.dd.ShadowLayout>
+
+            <com.dd.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/home_valueplat_linerlayout_shadow_margin_bottom"
+                android:layout_marginLeft="@dimen/home_valueplat_linerlayout_shadow_margin_left_right"
+                android:layout_marginRight="@dimen/home_valueplat_linerlayout_shadow_margin_left_right"
+                android:layout_weight="0.58"
+                app:sl_cornerRadius="10dp"
+                app:sl_shadowColor="@color/shadowPlat">
+
+                <LinearLayout
+                    android:id="@+id/healthNewsCardLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/home_valueplat_linerlayout_margin_left_right"
+                    android:layout_marginLeft="@dimen/home_valueplat_linerlayout_margin_left_right"
+                    android:layout_marginRight="@dimen/home_valueplat_linerlayout_margin_left_right"
+                    android:layout_marginTop="@dimen/home_valueplat_linerlayout_margin_bottom"
+                    android:background="@drawable/radius_plat_default"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/newsTxtView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginStart="@dimen/home_plattitle_textview_margin_start"
+                            android:layout_marginTop="@dimen/home_plattitle_textview_margin_top"
+                            android:gravity="center_vertical"
+                            android:text="@string/news"
+                            android:textColor="@color/colorDarkBrown"
+                            android:textSize="@dimen/home_plat_title_textview_font_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginEnd="@dimen/home_valueplat_linerlayout_margin_left_right"
+                            android:layout_marginStart="@dimen/home_valueplat_linerlayout_margin_left_right"
+                            android:layout_marginTop="-1dp"
+                            android:background="@color/colorLightGray">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.85"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/listNews"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/home_plattitle_textview_margin_start"
+                            android:layout_marginEnd="@dimen/home_plattitle_textview_margin_start"
+                            android:layout_marginStart="@dimen/home_plattitle_textview_margin_start"
+                            android:divider="@null" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.dd.ShadowLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

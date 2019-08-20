@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.sensingself.sensingsugar.Activites.LoginRegisterProfile.LoginActivity"
+    android:background="@drawable/blue_gradient_bk"
+    android:theme="@style/PushViewTheme"
+    android:id="@+id/parentRegister">>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <TextView
+            android:id="@+id/mobileNumTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registermobilenumtitle_textview_margin_top"
+            android:text="@string/enter_phone_num"
+            android:textAlignment="center"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/registermobilenumtitle_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/mobileNumberTextForRegister"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/registermobilenum_edittext_height"
+            android:layout_marginEnd="@dimen/registermobilenum_edittext_margin_end"
+            android:layout_marginStart="@dimen/registermobilenum_edittext_margin_start"
+            android:layout_marginTop="@dimen/registermobilenum_edittext_margin_top"
+            android:background="@drawable/radius_controller_textview"
+            android:ellipsize="middle"
+            android:ems="10"
+            android:fadeScrollbars="false"
+            android:inputType="phone"
+            android:paddingStart="@dimen/registermobilenum_edittext_padding_start"
+            android:textColor="@color/editTextColor"
+            android:textSize="@dimen/registermobilenum_edittext_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileNumTitle" />
+
+        <ImageView
+            android:id="@+id/agreeImageBtn"
+            android:layout_width="@dimen/agree_imageview_width"
+            android:layout_height="@dimen/agree_imageview_height"
+            android:layout_marginStart="@dimen/agree_imageview_margin_start"
+            android:layout_marginTop="@dimen/agree_imageview_margin_top"
+            android:contentDescription="@string/todo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileNumberTextForRegister"
+            app:srcCompat="@drawable/uncheck_agree" />
+
+        <TextView
+            android:id="@+id/agreeTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/agree_textview_margin_start"
+            android:text="@string/i_agree"
+            android:textColor="@color/colorDarkBrown"
+            android:textSize="@dimen/agree_textview_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/agreeImageBtn"
+            app:layout_constraintStart_toEndOf="@+id/agreeImageBtn"
+            app:layout_constraintTop_toTopOf="@+id/agreeImageBtn" />
+
+        <TextView
+            android:id="@+id/linkViewTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/linkviewterms_textview_margin_start"
+            android:text="@string/view_terms"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/linkviewterms_textview_font_size"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/agreeTxtView"
+            app:layout_constraintStart_toEndOf="@+id/agreeTxtView"
+            app:layout_constraintTop_toTopOf="@+id/agreeTxtView" />
+
+        <Button
+            android:id="@+id/registerNextBtn"
+            android:layout_width="@dimen/register_button_width"
+            android:layout_height="@dimen/register_button_height"
+            android:layout_marginBottom="@dimen/register_button_margin_bottom"
+            android:background="@drawable/radius_controller_btn"
+            android:text="@string/next_btn"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/register_button_font_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/registerPreCCP"
+            android:layout_width="@dimen/pre_phone_num_CCP_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/pre_phone_num_CCP_margin_start"
+            app:layout_constraintBottom_toBottomOf="@+id/mobileNumberTextForRegister"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mobileNumberTextForRegister"
+            app:ccp_contentColor="@color/editTextColor"
+            app:ccpDialog_textColor="@color/editTextColor"
+            app:ccp_textSize="@dimen/pre_phone_num_CCP_font_size"
+            app:ccpDialog_allowSearch="true"
+            app:ccp_rememberLastSelection="true"
+            app:ccp_countryAutoDetectionPref="SIM_NETWORK_LOCALE"
+            app:ccpDialog_showCloseIcon="true"
+            app:ccp_showFlag="false"
+            app:ccp_showNameCode="false"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

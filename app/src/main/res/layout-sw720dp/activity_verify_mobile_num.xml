@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.sensingself.sensingsugar.Activites.LoginRegisterProfile.LoginActivity"
+    android:background="@drawable/blue_gradient_bk"
+    android:theme="@style/PushViewTheme"
+    android:id="@+id/parentVerifyView">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <TextView
+            android:id="@+id/mobileNumTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/verifymobilenumtitle_textview_margin_top"
+            android:text="@string/enter_6_digit_code"
+            android:textAlignment="center"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/verifymobilenumtitle_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/digit_constraintlayout_height"
+            android:layout_marginEnd="@dimen/digit_constraintlayout_margin_end"
+            android:layout_marginStart="@dimen/digit_constraintlayout_margin_start"
+            android:layout_marginTop="@dimen/digit_constraintlayout_margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileNumTitle">
+
+            <EditText
+                android:id="@+id/firstDigitCode"
+                android:layout_width="@dimen/digit_edittext_width"
+                android:layout_height="@dimen/digit_edittext_height"
+                android:background="@drawable/radius_controller_textedit_6digit"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:maxLength="1"
+                android:fadeScrollbars="false"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:imeOptions="actionNext"
+                android:textColor="@color/editTextColor"
+                app:layout_constraintEnd_toStartOf="@+id/secondDigitCode"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/secondDigitCode"
+                android:layout_width="@dimen/digit_edittext_width"
+                android:layout_height="@dimen/digit_edittext_height"
+                android:background="@drawable/radius_controller_textedit_6digit"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:maxLength="1"
+                android:fadeScrollbars="false"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:imeOptions="actionNext"
+                android:textColor="@color/editTextColor"
+                app:layout_constraintBottom_toBottomOf="@+id/firstDigitCode"
+                app:layout_constraintEnd_toStartOf="@+id/thirdDigitCode"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/firstDigitCode"
+                app:layout_constraintTop_toTopOf="@+id/firstDigitCode" />
+
+            <EditText
+                android:id="@+id/thirdDigitCode"
+                android:layout_width="@dimen/digit_edittext_width"
+                android:layout_height="@dimen/digit_edittext_height"
+                android:background="@drawable/radius_controller_textedit_6digit"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:maxLength="1"
+                android:fadeScrollbars="false"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:imeOptions="actionNext"
+                android:textColor="@color/editTextColor"
+                app:layout_constraintBottom_toBottomOf="@+id/secondDigitCode"
+                app:layout_constraintEnd_toStartOf="@+id/fourthDigitCode"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/secondDigitCode"
+                app:layout_constraintTop_toTopOf="@+id/secondDigitCode" />
+
+            <EditText
+                android:id="@+id/fourthDigitCode"
+                android:layout_width="@dimen/digit_edittext_width"
+                android:layout_height="@dimen/digit_edittext_height"
+                android:background="@drawable/radius_controller_textedit_6digit"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:maxLength="1"
+                android:fadeScrollbars="false"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:imeOptions="actionNext"
+                android:textColor="@color/editTextColor"
+                app:layout_constraintBottom_toBottomOf="@+id/thirdDigitCode"
+                app:layout_constraintEnd_toStartOf="@+id/fifthDigitCode"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/thirdDigitCode"
+                app:layout_constraintTop_toTopOf="@+id/thirdDigitCode" />
+
+            <EditText
+                android:id="@+id/fifthDigitCode"
+                android:layout_width="@dimen/digit_edittext_width"
+                android:layout_height="@dimen/digit_edittext_height"
+                android:background="@drawable/radius_controller_textedit_6digit"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:maxLength="1"
+                android:fadeScrollbars="false"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:imeOptions="actionNext"
+                android:textColor="@color/editTextColor"
+                app:layout_constraintBottom_toBottomOf="@+id/fourthDigitCode"
+                app:layout_constraintEnd_toStartOf="@+id/sixthDigitCode"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/fourthDigitCode"
+                app:layout_constraintTop_toTopOf="@+id/fourthDigitCode" />
+
+            <EditText
+                android:id="@+id/sixthDigitCode"
+                android:layout_width="@dimen/digit_edittext_width"
+                android:layout_height="@dimen/digit_edittext_height"
+                android:background="@drawable/radius_controller_textedit_6digit"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:maxLength="1"
+                android:fadeScrollbars="false"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/editTextColor"
+                app:layout_constraintBottom_toBottomOf="@+id/fifthDigitCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/fifthDigitCode"
+                app:layout_constraintTop_toTopOf="@+id/fifthDigitCode" />
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:id="@+id/verifyNextDoneBtn"
+            android:layout_width="@dimen/verifynext_button_width"
+            android:layout_height="@dimen/verifynext_button_height"
+            android:layout_marginBottom="@dimen/verifynext_button_margin_bottom"
+            android:background="@drawable/radius_controller_btn"
+            android:text="@string/next_btn"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/verifynext_button_font_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/verifyViewNote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/verifyViewNote"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/verifynote_textview_height"
+            android:layout_marginBottom="@dimen/verifynote_textview_margin_bottom"
+            android:text="@string/if_incase_you_do_not_recive_code"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightBrownForNote"
+            android:textSize="@dimen/verifynote_textview_font_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

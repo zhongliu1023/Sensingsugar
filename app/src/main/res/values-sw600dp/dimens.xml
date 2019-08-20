@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_height">90dp</dimen>
+    <dimen name="navi_title_font_size">28sp</dimen>
+    <dimen name="editView_default_font_size">28sp</dimen>
+    <dimen name="margin_top_bottom_default_1">8dp</dimen>
+    <dimen name="margin_top_bottom_default_5">40dp</dimen>
+
+
+    <!-- Splash activity-->
+    <dimen name="sesingsugar_title_txtview_height">55dp</dimen>
+    <dimen name="sesingsugar_title_txtview_margin_start">30dp</dimen>
+    <dimen name="sesingsugar_title_txtview_margin_end">30dp</dimen>
+    <dimen name="sesingsugar_title_txtview_margin_top">190dp</dimen>
+    <dimen name="sesingsugar_title_txtview_font_size">40sp</dimen>
+
+    <dimen name="loading_content_txtview_margin_start">30dp</dimen>
+    <dimen name="loading_content_txtview_margin_end">30dp</dimen>
+    <dimen name="loading_content_txtview_margin_top">30dp</dimen>
+    <dimen name="loading_content_txtview_line_space">4sp</dimen>
+    <dimen name="loading_content_txtview_font_size">32sp</dimen>
+
+    <!-- Login activity-->
+    <dimen name="login_title_txtview_height">110dp</dimen>
+    <dimen name="login_title_txtview_margin_top">110dp</dimen>
+    <dimen name="login_title_txtview_font_size">75sp</dimen>
+
+    <dimen name="hello_txtview_maring_top">70dp</dimen>
+    <dimen name="hello_txtview_font_size">40sp</dimen>
+
+    <dimen name="login_mobile_num_title_textview_maring_top">25dp</dimen>
+    <dimen name="login_mobile_num_title_textview_font_size">28sp</dimen>
+
+    <dimen name="login_mobile_num_edittext_height">60dp</dimen>
+    <dimen name="segment_hegiht">50dp</dimen>
+    <dimen name="login_mobile_num_edittext_margin_end">25dp</dimen>
+    <dimen name="login_mobile_num_edittext_margin_start">25dp</dimen>
+    <dimen name="login_mobile_num_edittext_margin_top">25dp</dimen>
+    <dimen name="login_mobile_num_edittext_padding_end">10dp</dimen>
+    <dimen name="login_mobile_num_edittext_padding_start">95dp</dimen>
+    <dimen name="login_mobile_num_edittext_font_size">30sp</dimen>
+
+    <dimen name="login_button_weidth">240dp</dimen>
+    <dimen name="login_button_height">60dp</dimen>
+    <dimen name="login_button_margin_bottom">25dp</dimen>
+    <dimen name="login_button_font_size">30sp</dimen>
+
+    <dimen name="register_link_textview_height">40dp</dimen>
+    <dimen name="register_link_textview_margin_bottom">60dp</dimen>
+    <dimen name="register_link_textview_font_size">22sp</dimen>
+
+    <dimen name="pre_phone_num_CCP_width">90dp</dimen>
+    <dimen name="pre_phone_num_CCP_margin_start">30dp</dimen>
+    <dimen name="pre_phone_num_CCP_font_size">30sp</dimen>
+
+    <!-- Profile Edit -->
+    <dimen name="profile_title_textview_margin_top">60dp</dimen>
+    <dimen name="profile_title_textview_font_size">32sp</dimen>
+
+    <dimen name="firstname_editText_height">60dp</dimen>
+    <dimen name="firstname_editText_margin_end">18dp</dimen>
+    <dimen name="firstname_editText_margin_start">18dp</dimen>
+    <dimen name="firstname_editText_margin_top">35dp</dimen>
+    <dimen name="firstname_editText_padding_end">10dp</dimen>
+    <dimen name="firstname_editText_padding_start">15dp</dimen>
+
+    <dimen name="lastname_editText_height">60dp</dimen>
+    <dimen name="lastname_editText_margin_end">18dp</dimen>
+    <dimen name="lastname_editText_margin_start">18dp</dimen>
+    <dimen name="lastname_editText_margin_top">20dp</dimen>
+    <dimen name="lastname_editText_padding_end">10dp</dimen>
+    <dimen name="lastname_editText_padding_start">15dp</dimen>
+
+    <dimen name="aadhaar_editText_height">60dp</dimen>
+    <dimen name="aadhaar_editText_margin_end">18dp</dimen>
+    <dimen name="aadhaar_editText_margin_start">18dp</dimen>
+    <dimen name="aadhaar_editText_margin_top">20dp</dimen>
+    <dimen name="aadhaar_editText_padding_end">10dp</dimen>
+    <dimen name="aadhaar_editText_padding_start">15dp</dimen>
+
+    <dimen name="institutiontype_textview_height">60dp</dimen>
+    <dimen name="institutiontype_textview_margin_bottom">20dp</dimen>
+    <dimen name="institutiontype_textview_margin_end">18dp</dimen>
+    <dimen name="institutiontype_textview_margin_start">18dp</dimen>
+    <dimen name="institutiontype_textview_padding_end">10dp</dimen>
+    <dimen name="institutiontype_textview_padding_start">15dp</dimen>
+
+    <dimen name="institutiontype_spinner_height">65dp</dimen>
+    <dimen name="institutiontype_spinner_margin_bottom">23dp</dimen>
+    <dimen name="institutiontype_spinner_margin_end">18dp</dimen>
+    <dimen name="institutiontype_spinner_margin_start">28dp</dimen>
+
+    <dimen name="state_editText_height">60dp</dimen>
+    <dimen name="state_editText_margin_bottom">20dp</dimen>
+    <dimen name="state_editText_margin_end">18dp</dimen>
+    <dimen name="state_editText_margin_start">18dp</dimen>
+    <dimen name="state_editText_padding_end">10dp</dimen>
+    <dimen name="state_editText_padding_start">15dp</dimen>
+
+    <dimen name="institutionname_editText_height">60dp</dimen>
+    <dimen name="institutionname_editText_margin_bottom">20dp</dimen>
+    <dimen name="institutionname_editText_margin_end">18dp</dimen>
+    <dimen name="institutionname_editText_margin_start">18dp</dimen>
+    <dimen name="institutionname_editText_padding_end">10dp</dimen>
+    <dimen name="institutionname_editText_padding_start">15dp</dimen>
+
+    <dimen name="city_editText_height">60dp</dimen>
+    <dimen name="city_editText_margin_bottom">60dp</dimen>
+    <dimen name="city_editText_margin_end">18dp</dimen>
+    <dimen name="city_editText_margin_start">18dp</dimen>
+    <dimen name="city_editText_padding_end">10dp</dimen>
+    <dimen name="city_editText_padding_start">15dp</dimen>
+
+    <dimen name="profile_done_button_weidth">240dp</dimen>
+    <dimen name="profile_done_button_height">60dp</dimen>
+    <dimen name="profile_done_button_margin_bottom">20dp</dimen>
+    <dimen name="profile_done_button_font_size">30sp</dimen>
+
+    <dimen name="profile_edit_note_margin_bottom">20dp</dimen>
+    <dimen name="profile_edit_note_font_size">20sp</dimen>
+
+    <dimen name="profile_camera_imageview_width">55dp</dimen>
+    <dimen name="profile_camera_imageview_height">50dp</dimen>
+    <dimen name="profile_camera_imageview_margin_end">30dp</dimen>
+    <dimen name="profile_camera_imageview_margin_top">25dp</dimen>
+
+    <!-- Verify Code View -->
+    <dimen name="verifymobilenumtitle_textview_margin_top">250dp</dimen>
+    <dimen name="verifymobilenumtitle_textview_font_size">24sp</dimen>
+
+    <dimen name="digit_constraintlayout_height">60dp</dimen>
+    <dimen name="digit_constraintlayout_margin_end">24dp</dimen>
+    <dimen name="digit_constraintlayout_margin_start">24dp</dimen>
+    <dimen name="digit_constraintlayout_margin_top">25dp</dimen>
+
+    <dimen name="digit_edittext_width">60dp</dimen>
+    <dimen name="digit_edittext_height">60dp</dimen>
+    <dimen name="digit_edittext_font_size">30sp</dimen>
+
+    <dimen name="verifynext_button_width">180dp</dimen>
+    <dimen name="verifynext_button_height">60dp</dimen>
+    <dimen name="verifynext_button_margin_bottom">25dp</dimen>
+    <dimen name="verifynext_button_font_size">30sp</dimen>
+
+    <dimen name="verifynote_textview_height">68dp</dimen>
+    <dimen name="verifynote_textview_margin_bottom">16dp</dimen>
+    <dimen name="verifynote_textview_font_size">20sp</dimen>
+
+    <!-- Register View -->
+    <dimen name="registermobilenumtitle_textview_margin_top">220dp</dimen>
+
+    <dimen name="registermobilenum_edittext_height">60dp</dimen>
+    <dimen name="registermobilenum_edittext_margin_end">18dp</dimen>
+    <dimen name="registermobilenum_edittext_margin_start">18dp</dimen>
+    <dimen name="registermobilenum_edittext_margin_top">50dp</dimen>
+    <dimen name="registermobilenum_edittext_padding_start">95dp</dimen>
+    <dimen name="registermobilenum_edittext_font_size">30sp</dimen>
+
+    <dimen name="agree_imageview_width">40dp</dimen>
+    <dimen name="agree_imageview_height">40dp</dimen>
+    <dimen name="agree_imageview_margin_start">35dp</dimen>
+    <dimen name="agree_imageview_margin_top">25dp</dimen>
+
+    <dimen name="agree_textview_margin_start">6dp</dimen>
+    <dimen name="agree_textview_font_size">18sp</dimen>
+
+    <dimen name="linkviewterms_textview_margin_start">10dp</dimen>
+    <dimen name="linkviewterms_textview_font_size">18sp</dimen>
+
+    <dimen name="pre_register_mobile_num_textview_margin_start">35dp</dimen>
+    <dimen name="pre_register_mobile_num_textview_font_size">30sp</dimen>
+
+    <dimen name="register_button_width">240dp</dimen>
+    <dimen name="register_button_height">60dp</dimen>
+    <dimen name="register_button_margin_bottom">70dp</dimen>
+    <dimen name="register_button_font_size">30sp</dimen>
+
+    <!-- Spinner default item -->
+    <dimen name="spinner_default_item_font_size">28sp</dimen>
+
+    <!-- Tab Main Activity-->
+    <dimen name="tab_height">80dp</dimen>
+    <dimen name="tab_image_size">50dp</dimen>
+
+    <!-- Home Fragment-->
+    <dimen name="home_greeting_layout_height">60dp</dimen>
+    <dimen name="home_greeting_layout_margin_top">20dp</dimen>
+    <dimen name="home_greeting_textview_margin_start">25dp</dimen>
+    <dimen name="home_greeting_font_size">40sp</dimen>
+    <dimen name="home_plat_title_textview_font_size">32sp</dimen>
+    <dimen name="home_value_title_textview_font_size">26sp</dimen>
+    <dimen name="home_total_textview_font_size">64sp</dimen>
+    <dimen name="home_diabetic_textview_font_size">60sp</dimen>
+    <dimen name="home_valueplat_linerlayout_margin_bottom">6dp</dimen>
+    <dimen name="home_valueplat_linerlayout_shadow_margin_bottom">6dp</dimen>
+    <dimen name="home_valueplat_linerlayout_margin_left_right">12dp</dimen>
+    <dimen name="home_valueplat_linerlayout_shadow_margin_left_right">12dp</dimen>
+    <dimen name="home_valueplat_linerlayout_margin_top">15dp</dimen>
+    <dimen name="home_valueplat_linerlayout_shadow_margin_top">15dp</dimen>
+    <dimen name="home_elevation">50dp</dimen>
+    <dimen name="home_plattitle_textview_margin_start">25dp</dimen>
+    <dimen name="home_plattitle_textview_margin_top">15dp</dimen>
+    <dimen name="home_values_textview_margin_start">30dp</dimen>
+
+    <!-- Identify-->
+    <dimen name="patient_note_textview_margin_top">85dp</dimen>
+    <dimen name="patientname_constraint_height">195dp</dimen>
+    <dimen name="search_mode_constraint_height">240dp</dimen>
+    <dimen name="patient_button_margin_bottom">55dp</dimen>
+    <dimen name="patient_button_width">220dp</dimen>
+    <dimen name="patient_add_info_edittext_margin_top">60dp</dimen>
+    <dimen name="patient_add_info_edittext_margin_bottom">80dp</dimen>
+
+    <!-- Fragment Begin Test-->
+    <dimen name="bloodtype_constraint_height">280dp</dimen>
+
+    <!-- Fragment test report-->
+    <dimen name="test_report_un_textview_margin_top">10dp</dimen>
+    <dimen name="test_report_default_margin">7dp</dimen>
+    <dimen name="test_report_imagemark_layout_height">230dp</dimen>
+    <dimen name="test_report_imagemark_layout_margin_top">15dp</dimen>
+    <dimen name="test_report_currentresultMdgl_textview_margin_top">40dp</dimen>
+    <dimen name="test_report_values_default_margin">12dp</dimen>
+    <dimen name="testGuidLayout_height">70dp</dimen>
+
+    <!-- Fragment Profile View-->
+    <dimen name="pv_default_margin_1">15dp</dimen>
+    <dimen name="pv_default_margin_2">20dp</dimen>
+    <dimen name="pv_default_margin_3">25dp</dimen>
+    <dimen name="pv_default_margin_4">30dp</dimen>
+    <dimen name="pv_thumb_size">200dp</dimen>
+    <dimen name="pv_info_value_fontsize">20sp</dimen>
+    <dimen name="pv_fullname_fontsize">30sp</dimen>
+    <dimen name="pv_profile_edit_button_height">40dp</dimen>
+    <dimen name="pv_profile_edit_button_fontsize">24sp</dimen>
+    <dimen name="pv_software_fontsize">18sp</dimen>
+    <dimen name="pv_sensingsugar_fontsize">36sp</dimen>
+    <dimen name="pv_cuwell_fontsize">20sp</dimen>
+
+    <!-- CropActivity-->
+    <dimen name="ca_take_photo_fontsize">54sp</dimen>
+    <dimen name="ca_take_photo_note_fontsize">22sp</dimen>
+    <dimen name="activity_horizontal_margin">48dp</dimen>
+    <dimen name="camera_taking_margin_bottom">40dp</dimen>
+
+    <dimen name="result_read_height">25dp</dimen>
+</resources>

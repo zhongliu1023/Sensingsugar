@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home_tab"
+        android:icon="@drawable/home_tab"
+        android:title="Home"/>
+    <item
+        android:id="@+id/action_seed_tab"
+        android:icon="@drawable/seed_tab"
+        android:title="Seed"/>
+    <item
+        android:id="@+id/action_search_tab"
+        android:icon="@drawable/search_tab"
+        android:title="Search"/>
+    <item
+        android:id="@+id/action_note_tab"
+        android:icon="@drawable/note_tab"
+        android:title="Note"/>
+</menu>
